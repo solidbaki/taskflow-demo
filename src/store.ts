@@ -1,0 +1,1 @@
+import { configureStore } from "@reduxjs/toolkit"; import { tasksApi } from "./tasksApi"; export const store = configureStore({ reducer: { [tasksApi.reducerPath]: tasksApi.reducer }, middleware: (gDM) => gDM().concat(tasksApi.middleware) });
